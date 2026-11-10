@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New Deliverance Fellowship Ministries</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#fff;color:#333;text-align:center}
+header{background:#a40000;color:white;padding:25px 12px;border-bottom:5px solid #d4af37}
+h1{font-size:25px}
+nav{display:flex;background:#d4af37}
+nav button{flex:1;padding:16px 4px;border:0;background:#d4af37;color:#380000;font-size:17px;font-weight:bold}
+nav button.active{background:#a40000;color:white}
+section{display:none;padding:24px 15px}
+section.active{display:block}
+h2{color:#a40000}
+.btn{display:block;background:#a40000;color:white;padding:15px;margin:16px auto;border-radius:9px;text-decoration:none;max-width:300px}
+footer{background:#a40000;color:white;padding:18px;margin-top:30px}
+</style>
+</head>
+<body>
+<header>
+<h1>New Deliverance Fellowship Ministries</h1>
+<p>Empowering, Restoring, and Loving the Hurt Away!</p>
+</header>
+<nav>
+<button class="active" onclick="showTab('home',this)">Home</button>
+<button onclick="showTab('watch',this)">Watch</button>
+<button onclick="showTab('give',this)">Give</button>
+</nav>
+<section id="home" class="active">
+<h2>Welcome to NDFM!</h2>
+<p>A Place to Belong! A Place to Call Home!</p>
+<h3>Bishop Kenneth &amp; Pastor Debra Stringfellow</h3>
+<p>6602 Martin Luther King Jr. Blvd.<br>Houston, Texas 77033</p>
+<h2>Worship With Us</h2>
+<p>Sunday School: 10:15 AM</p>
+<p>Sunday Worship Experience: 11 AM</p>
+<p>Tuesday Bible Study: 7:30 PM</p>
+<p>Friday Night Live: 7:30 PM</p>
+<p>Be Our Guest! Bring the Family!</p>
+</section>
+<section id="watch">
+<h2>Watch Our Worship Experience</h2>
+<p>Join us on Facebook Live!</p>
+<a class="btn" href="https://www.facebook.com/share/1BTTwcegBu/" target="_blank" rel="noopener noreferrer">Watch on Facebook</a>
+</section>
+<section id="give">
+<h2>Partner With Us!</h2>
+<p>Thank you for supporting our ministry.</p>
+<a class="btn" href="https://cash.app/$NDFMinistries" target="_blank" rel="noopener noreferrer">Give Through Cash App</a>
+<p><strong>Zelle: 832-746-0392</strong></p>
+<p>Use your banking app to give through Zelle.</p>
+<h3>Mail Your Gift</h3>
+<p>New Deliverance Fellowship Ministries<br>6602 Martin Luther King Jr. Blvd.<br>Houston, Texas 77033</p>
+</section>
+<footer>
+<p>New Deliverance Fellowship Ministries</p>
+<p>www.ndfministries.org</p>
+</footer>
+<script>
+function showTab(id,button){
+document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));
+button.classList.add('active');
+}
+</script>
+</body>
+</html>
