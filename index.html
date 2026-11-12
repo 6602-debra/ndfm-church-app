@@ -78,10 +78,29 @@ button.classList.add('active');
 <section id="prayer">
 <h2>Prayer Requests</h2>
 <p>How can we pray for you?</p>
+ <p>For Prayer, Call: <a href="tel:8328876745">832-887-6745</a></p>
 <p>New Deliverance Fellowship Ministries
   believes in the power of prayer!</p>
 <p>Submit your prayer request by contacting
   our ministry.</p>
+<form action="https://formsubmit.co/debstring@aol.com" method="POST">
+  <h3>Submit Your Prayer Request</h3>
+
+  <input type="text" name="Name" placeholder="Your Name" required>
+
+  <input type="tel" name="Phone" placeholder="Phone Number">
+
+  <input type="email" name="Email" placeholder="Email Address">
+
+  <textarea name="Prayer Request" placeholder="Type your prayer request here" required></textarea>
+
+  <label>
+    <input type="checkbox" name="Confidential" value="Yes">
+    Please keep my prayer request confidential.
+  </label>
+
+  <button type="submit">Send Prayer Request</button>
+</form>
 </section>
 <section id="events">
 <h2>Upcoming Church Events</h2>
